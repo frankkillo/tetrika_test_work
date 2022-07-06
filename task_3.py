@@ -31,7 +31,9 @@ def appearance(intervals):
             
     return ans
 
-tests = [
+
+if __name__ == '__main__':
+    tests = [
     {'data': {'lesson': [1594663200, 1594666800],
              'pupil': [1594663340, 1594663389, 1594663390, 1594663395, 1594663396, 1594666472],
              'tutor': [1594663290, 1594663430, 1594663443, 1594666473]},
@@ -48,10 +50,8 @@ tests = [
              'tutor': [1594692017, 1594692066, 1594692068, 1594696341]},
     'answer': 3565
     },
-]
+    ]
 
-if __name__ == '__main__':
     for i, test in enumerate(tests):
         test_answer = appearance(test['data'])
         assert test_answer == test['answer'], f'Error on test case {i}, got {test_answer}, expected {test["answer"]}'
-        assert sorted(test['data']['tutor']) == test['data']['tutor']
