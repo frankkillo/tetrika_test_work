@@ -26,7 +26,7 @@ def get_animals_count():
             data[animal[:1]] = data.get(animal[:1], 0) + 1
 
             if animal[:1] == 'H':
-                # Не переведенно название название существа в Wiki
+                # Не переведенно название существа в Wiki
                 # Helobdella nununununojensis - Двуглазая клепсина
                 data['Д'] += 1
                 del data['H']

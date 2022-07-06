@@ -11,7 +11,7 @@ def find_zero(array):
 
 def giatr(x1, y1, x2, y2, x3, y3, x4, y4):
     """
-    This func return the intersection area of two rectangle
+    This func return the intersection area of two rectangles
     :param x1: int, left up X coord of rect 1
     :param y1: int, left up Y coord of rect 1
     :param x2: int, right down X coord of rect 1
